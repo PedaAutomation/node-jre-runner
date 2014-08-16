@@ -1,0 +1,32 @@
+{
+  "name": "node-jre-runner",
+  "version": "0.0.0",
+  "description": "A utility which automatically downloads a jre to execute programs.",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "node install.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PedaAutomation/node-jre-runner.git"
+  },
+  "keywords": [
+    "java",
+    "jre",
+    "node",
+    "run"
+  ],
+  "author": "Jan-Henrik Bruhn <jh.bruhn@me.com> (https://jhbruhn.de/)",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/PedaAutomation/node-jre-runner/issues"
+  },
+  "homepage": "https://github.com/PedaAutomation/node-jre-runner",
+  "dependencies": {
+    "progress": "^1.1.8",
+    "request-progress": "^0.3.1",
+    "request": "^2.40.0",
+    "unzip": "^0.1.9"
+  }
+}
