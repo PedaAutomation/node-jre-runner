@@ -1,5 +1,6 @@
 var spawn = require('child_process').spawn,
-    os    = require('os');
+    os    = require('os'),
+    fs    = require('fs');
 
 var JAVA_PATHS = {
   "win32": {
@@ -19,6 +20,8 @@ var JAVA_PATHS = {
 
 
 var javaPath = __dirname + "/jre/" + JAVA_PATHS[os.platform()][os.arch()];
+
+fs.chmodSync(javaPath, '777');
 
 module.exports.runJava = function(args) {
   return spawn(javaPath, args);
