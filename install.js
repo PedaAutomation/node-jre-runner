@@ -1,13 +1,10 @@
-console.log(__dirname);
-
 var os          = require('os'),
     fs          = require('fs'),
     request     = require('request'),
     progress    = require('request-progress'),
     ProgressBar = require('progress'),
     unzip       = require('unzip');
-
-
+    
 
 var DOWNLOADS = {
   "win32": {
