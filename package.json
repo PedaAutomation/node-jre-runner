@@ -1,5 +1,5 @@
 {
-  "name": "node-jre-runner",
+  "name": "jre-runner",
   "version": "0.0.0",
   "description": "A utility which automatically downloads a jre to execute programs.",
   "main": "index.js",
