@@ -18,8 +18,8 @@ var JAVA_PATHS = {
 }
 
 
-var javaPath = __dirname + "/jdk/" + JAVA_PATHS[os.platform()][os.arch()];
-
+var javaPath = __dirname + "/jre/" + JAVA_PATHS[os.platform()][os.arch()];
+console.log(javaPath);
 module.exports.runJava = function(args) {
   return spawn(javaPath, args);
 }
